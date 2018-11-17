@@ -17,7 +17,7 @@ do
       if [[ "$response" == "red" ]]; 
       then
          message+="Elasticsearch Server ${hostname[$i]}(${IP[$i]}) is down\n"
-      elif [[ "$response" =~ "yellow" ]]; then
+      elif [[ "$response" == "yellow" ]]; then
          message+="Elasticsearch  server ${hostname[$i]}(${IP[$i]}) shards are allocating\n"
       elif [[ "$response" == "" ]]; then
          message+="Elasticsearch process is not running in ${hostname[$i]}(${IP[$i]})\n"
