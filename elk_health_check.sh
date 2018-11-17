@@ -12,9 +12,9 @@ for i in $IP
 do
    echo $i
    response=$(curl ${IP[$i]}:9200/_cluster/health)
-   if [[ ! "$response" =~ "green" ]]; then
+   if [[ "$response" != "green" ]]; then
    flag=1
-      if [[ "$response" =~ "red" ]]; 
+      if [[ "$response" == "red" ]]; 
       then
          message+="Elasticsearch Server ${hostname[$i]}(${IP[$i]}) is down\n"
       elif [[ "$response" =~ "yellow" ]]; then
