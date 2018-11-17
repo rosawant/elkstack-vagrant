@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
     agent.vm.hostname = 'agent'
     #agent.vm.box_url = "ubuntu/trusty64"
     agent.vm.box_url = "elastic/ubuntu-16.04-x86_64"
-    agent.vm.provision :"shell", path:"agent_setup.sh"
+    #agent.vm.provision :"shell", path:"agent_setup.sh"
     agent.vm.synced_folder "./", "/vagrant"
     agent.vm.network :private_network, ip: "192.168.254.13"
     agent.vm.network :forwarded_port, guest: 22, host: 1234, id: "ssh"
