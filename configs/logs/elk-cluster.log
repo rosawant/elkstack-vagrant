@@ -1,0 +1,76 @@
+[2018-11-21T11:26:57,065][INFO ][o.e.n.Node               ] [agent] initializing ...
+[2018-11-21T11:26:57,279][INFO ][o.e.e.NodeEnvironment    ] [agent] using [1] data paths, mounts [[/vagrant (vagrant)]], net usable_space [415.4gb], net total_space [476.9gb], spins? [possibly], types [vboxsf]
+[2018-11-21T11:26:57,284][INFO ][o.e.e.NodeEnvironment    ] [agent] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-11-21T11:26:57,304][ERROR][o.e.n.Node               ] [agent] detected index data in default.path.data [/var/lib/elasticsearch/nodes/0/indices] where there should not be any
+[2018-11-21T11:26:57,305][INFO ][o.e.n.Node               ] [agent] index folder [9r781LAjTz-_3aZR2wFbEg] in default.path.data [/var/lib/elasticsearch/nodes/0/indices] must be moved to any of [/vagrant/data/nodes/0/indices]
+[2018-11-21T11:26:57,306][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: detected index data in default.path.data [/var/lib/elasticsearch] where there should not be any; check the logs for details
+	at org.elasticsearch.node.Node.checkForIndexDataInDefaultPathData(Node.java:577) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:275) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.13.jar:5.6.13]
+[2018-11-21T11:26:57,317][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [agent] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: detected index data in default.path.data [/var/lib/elasticsearch] where there should not be any; check the logs for details
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.13.jar:5.6.13]
+Caused by: java.lang.IllegalStateException: detected index data in default.path.data [/var/lib/elasticsearch] where there should not be any; check the logs for details
+	at org.elasticsearch.node.Node.checkForIndexDataInDefaultPathData(Node.java:577) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:275) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.13.jar:5.6.13]
+	... 6 more
+[2018-11-21T11:34:22,484][INFO ][o.e.n.Node               ] [agent] initializing ...
+[2018-11-21T11:34:22,686][INFO ][o.e.e.NodeEnvironment    ] [agent] using [1] data paths, mounts [[/vagrant (vagrant)]], net usable_space [415.4gb], net total_space [476.9gb], spins? [possibly], types [vboxsf]
+[2018-11-21T11:34:22,687][INFO ][o.e.e.NodeEnvironment    ] [agent] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-11-21T11:34:22,704][ERROR][o.e.n.Node               ] [agent] detected index data in default.path.data [/var/lib/elasticsearch/nodes/0/indices] where there should not be any
+[2018-11-21T11:34:22,705][INFO ][o.e.n.Node               ] [agent] index folder [9r781LAjTz-_3aZR2wFbEg] in default.path.data [/var/lib/elasticsearch/nodes/0/indices] must be moved to any of [/vagrant/data/nodes/0/indices]
+[2018-11-21T11:34:22,706][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: detected index data in default.path.data [/var/lib/elasticsearch] where there should not be any; check the logs for details
+	at org.elasticsearch.node.Node.checkForIndexDataInDefaultPathData(Node.java:577) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:275) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.13.jar:5.6.13]
+[2018-11-21T11:34:22,719][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [agent] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: detected index data in default.path.data [/var/lib/elasticsearch] where there should not be any; check the logs for details
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.13.jar:5.6.13]
+Caused by: java.lang.IllegalStateException: detected index data in default.path.data [/var/lib/elasticsearch] where there should not be any; check the logs for details
+	at org.elasticsearch.node.Node.checkForIndexDataInDefaultPathData(Node.java:577) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:275) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.13.jar:5.6.13]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.13.jar:5.6.13]
+	... 6 more

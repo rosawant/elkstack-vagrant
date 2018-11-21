@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     #master.vm.box_url = "ubuntu/trusty64"
     master.vm.box_url = "elastic/ubuntu-16.04-x86_64"
     master.vm.provision :"shell", path: "master_setup.sh"
-    master.vm.synced_folder "./configs", "/vagrant"
+    master.vm.synced_folder "./", "/vagrant"
     master.vm.network :private_network, ip: "192.168.254.12"
     master.vm.network :forwarded_port, guest: 22, host: 10122, id: "ssh"
     master.vm.network "forwarded_port", host: 9200, guest: 9200 # Elasticsearch
@@ -27,8 +27,8 @@ Vagrant.configure("2") do |config|
     agent.vm.hostname = 'agent'
     #agent.vm.box_url = "ubuntu/trusty64"
     agent.vm.box_url = "elastic/ubuntu-16.04-x86_64"
-    #agent.vm.provision :"shell", path:"agent_setup.sh"
-    agent.vm.synced_folder "./", "/vagrant"
+    agent.vm.provision :"shell", path:"agent_setup.sh"
+    agent.vm.synced_folder "./configs", "/vagrant"
     agent.vm.network :private_network, ip: "192.168.254.13"
     agent.vm.network :forwarded_port, guest: 22, host: 1234, id: "ssh"
     agent.vm.network "forwarded_port", host: 9300, guest: 9300 # Elasticsearch
