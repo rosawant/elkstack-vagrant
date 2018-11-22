@@ -6,7 +6,7 @@ sudo chmod 755 -R /etc/elasticsearch
 
 mkdir -p /vagrant/data
 mkdir -p /vagrant/logs
-sudo cp /vagrant/elasticsearch.yml /etc/elasticsearch/config/
+sudo cp -R /vagrant/elasticsearch.yml /etc/elasticsearch/
 sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable elasticsearch.service
 sudo /bin/systemctl start elasticsearch.service

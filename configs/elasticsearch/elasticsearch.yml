@@ -22,7 +22,6 @@ cluster.name: elk-cluster
 #
 node.name: agent
 node.master : false
-#
 # Add custom attributes to the node:
 #
 #node.attr.rack: r1
@@ -53,7 +52,8 @@ path.logs: /var/log/elasticsearch
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-network.host: 0.0.0.0
+network.host: 192.168.254.13
+network.bind_host: 0.0.0.0
 #
 # Set a custom port for HTTP:
 #
@@ -70,7 +70,7 @@ discovery.zen.ping.unicast.hosts: ["192.168.254.12", "192.168.254.13"]
 #
 # Prevent the "split brain" by configuring the majority of nodes (total number of master-eligible nodes / 2 + 1):
 #
-#discovery.zen.minimum_master_nodes: 
+#discovery.zen.minimum_master_nodes: 1
 #
 # For more information, consult the zen discovery module documentation.
 #
