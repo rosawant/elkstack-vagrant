@@ -20,8 +20,8 @@ cluster.name: elk-cluster
 #
 # Use a descriptive name for the node:
 #
-node.name: master
-node.master : true
+node.name: agent
+node.master: false
 #
 # Add custom attributes to the node:
 #

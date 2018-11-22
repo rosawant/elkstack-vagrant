@@ -1,0 +1,10 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - /vagrant/*.log
+      input_type: log
+
+output:
+  logstash:
+    hosts: ["localhost:5044"]
